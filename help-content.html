@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>关于木马等内容页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">   
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+
+
+   <!--------------------滚动----------------------> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" href="dist/aos.css" />
+    
+   <!--------------------列表---------------------->     
+     <link href="css/list.css" rel="stylesheet">   
+  <style type="text/css">
+    body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+    #allmap{width:100%;height:500px;}
+    p{margin-left:5px; font-size:14px;}
+  </style>
+     <script type="text/javascript" src="js/hammer.min.js"></script>
+	<!-- Latest compiled and minified CSS -->		
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Animate.css library -->
+	<link href="css/animate.min.css" rel="stylesheet">
+             
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rA8WIq7HI0klFT9mlms6xs7DUGWRVG57"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid wrapper">  
+      
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                 data-target="#example-navbar-collapse">
+                 <span class="sr-only">切换导航</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="24px" width="auto" style="float:left; padding-right:10px;" /><span style="line-height:55px;float:left;color:#fff; letter-spacing:2px;"><p>做企业需要做的电子商务</p></span></a>
+           </div>
+           <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
+              <ul class="nav navbar-nav">
+                 <li class="active"><a href="index.html">首页</a></li>
+                 <li><a href="case-list.html">案例</a></li>
+                 <li><a href="sevice-list.html">服务</a></li>
+                 <li><a href="about-list.html">我们</a></li>
+                 <li><a href="new-list.html">新闻</a></li>
+                 <li><a href="contact-list.html">联系</a></li>
+              </ul>
+           </div>
+           </div>
+      </nav>
+      
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox" id="carousel-example-generic">
+           <div class="item active"  style=" background:url(images/banner0.jpg)" >
+              <!-- 图片img已去，换背景 -->
+             <div class="carousel-caption banner-one-text">
+                  <h1 data-animation="animated fadeIn"  class="gai_animated">自适应各设备<br class="none"><span>，</span>全网营销首选</h1>
+                  <p data-animation="animated fadeIn">PC+Pad+手机+微信</p>
+             </div>
+           </div>
+           
+           <div class="item" style=" background:url(images/banner1.jpg)">
+             <div class="carousel-caption banner-two-text">
+                  <h1 data-animation="animated fadeIn"  class="gai_animated">独立开发设计</h1>
+                  <p data-animation="animated fadeIn">想要什么效果您说了算</p>
+             </div>
+           </div>
+           <div class="item" style=" background:url(images/banner2.jpg);">
+             <div class="carousel-caption banner-three-text">
+                  <h1 data-animation="animated fadeIn"  class="gai_animated">SEO</h1>
+                  <h2 data-animation="animated fadeIn">我们让您的客户轻松地找到您</h2>
+                  <p data-animation="animated fadeIn"><span>关键字</span><span>登陆口提交</span><span>地图提交</span></p>             
+             </div>
+           </div>
+           
+         </div>
+
+         <!-- Controls -->
+         
+       </div>            
+
+
+        <div class=" container new-list">
+         <div class="row">
+            <div class="col-xs-12">
+               <ul id="help-tap" class="nav new-list-title" aos="fade-up"  aos-easing="ease" aos-delay="100">
+                  <li class="active"><a href="#problem" class=""  data-toggle="tab">域名问题</a></li>
+                  <li><a href="#search" data-toggle="tab">密码找回</a></li>
+                  <li><a href="#website" data-toggle="tab">网站收录</a></li>
+                  <li><a href="#process" data-toggle="tab">网站制作流程</a></li>
+                  <li><a href="#feedback" data-toggle="tab">在线反馈</a></li>
+               </ul>
+               <div id="myTabContent" class="tab-content" aos="fade-up"  aos-easing="ease" aos-delay="100">
+                  <div class="tab-pane fade in active" id="problem">
+                      <div class="contant-contant">
+                           <div class="row contant-title">
+                               <h3 class="text-center" style="color:#333">域名问题</h3>
+                           </div>
+  
+                           <div class="contant-contant">
+                           
+                               <p style="text-align:left;"> <strong><span style="line-height:1.5;font-size:16px;"><br>
+                                 一.域名解释所需条件</span></strong></p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1.域名是在木马科技购买</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2.域名状态为OK状态</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;">
+                               <br/><strong>二.域名解析生效时间：</strong></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1. 添加新的解析记录 生效时间是1-2小时；
+                                 </span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2. 修改已经添加的解析记录，生效时间是1-２小时</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">3. .com等国际域名修改DNS，解析生效需要48小时；</span> 
+                               </div>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">4. .cn等国内域名修改DNS，解析生效需要24小时。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>三.为什么删除解析记录了还能访问到?</strong></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1.删除解析记录后，在全球同步的生效时间取决于各地ISP运营商（也就是互联网接入服务商）的缓存DNS的刷新时间。</span> 
+                               </div>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2.各地缓存DNS刷新的时间是不一致的，如果某些地区的DNS缓存刷新得快，那么在这些地区您的网站已经停止解析无法访问；而某些地区的DNS缓存刷新得慢，服务器上保存的仍然还是原来的IP地址记录，这些地方就会出现仍旧访问原网站信息的情况。遇到这种情况，您只需要耐心等待即可，各地区会逐步实现正常访问。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>四.域名过期续费规则:</strong></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1.国际域名过期30天内可以尝试提交续费，等待审核；</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">过期后30-60天为赎回期（redemptionPeriod)可以交赎回费用进行赎回，需等待审核；</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">过期后 60-75天为删除期（pendingDelete)这种状态只有等待删除后重新注册。</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2.国内顶级域名到期删除、续费及赎回规则：</span> 
+                               </div>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">根据中国互联网络信息中心（CNNIC）的要求，从2007年12月20日起，CN英文域名的续费规则进行了相应的调整： CN英文域名到期未办理续费业务，域名会进入续费期，在此期间您的域名将可能暂停原来的解析，直到您成功续费后方可恢复。cn到期后30天可续费。续费期内如仍未完成续费，域名会进入高价赎回期，域名状态变为“pendingDelete”，无法进行信息修改、转移和解析等操作。如您仍想要该域名，则需要按规定另外缴纳赎回域名的费用；若赎回期内域名没有被赎回，赎回期结束后60-75天为删除期，该域名将被删除。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>五.什么是泛域名解析？</strong></span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">泛域名解析是指将*域名解析到同一IP。在域名前添加任何子域名，均可访问到所指向的WEB地址。假如域名为a.com,也就是说域名a.com之下所设的*.a.com全部解析到同一个IP地址上去。比如设**.a.com就会自己自动解析到与a.com同一个IP地址上去。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>六.怎么查询解析是否已生效？</strong></span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">因为域名解析需要同步到DNS根服务器，而DNS根服务器会不定时刷新，只有DNS根服务器刷新后域才能正常访问，新增解析一般会在30分钟至2小时左右生效，最长不会超过24小时，修改解析时间会稍微延长。可以用ping命令来查看域名是否生效。点击开始菜单&gt;运行&gt;输入"CMD"&gt;敲回车键，进入 命令提示符窗口，输入"ping 空格您的域名"，如显示IP地址已为目标地址，即为解析已生效。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>七.什么是CNAME记录？</strong></span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">CNAME类型解析设置的方法和A记录类型基本是一样的，并且记录值填写服务器主机地址即可。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>八.什么是A记录？</strong></span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">A记录：即将域名指向到服务器空间IP地址。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>九.什么是MX记录？</strong></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1.MX记录解析是做邮箱解析使用的。记录类型选择MX，线路类型选择通用或者同时添加线路类型为电信、网通的记录；记录值填写邮局商提供的服务器IP地址或别名地址；TTL设置默认的3600即可，MX优先级填写邮局提供商要求的数据，或是默认10，有多条MX记录的时候，优先级要设置不一样的数据。</span> 
+                               </div>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2.路由记录，用户可以将该域名下的邮件服务器指向到自己的mail server上，然后即可自行操控所有的邮箱设置。您只需在线填写您服务器的IP地址，即可将您域名下的邮件全部转到您自己设定相应的邮件服务器上。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:16px;"><br/><strong>十.域名的基本分类：</strong></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">1.国际域名（international top-level domain-names，简称iTDs），也叫国际顶级域名。这也是使用最早也最广泛的域名。例如表示工商企业的 .com，表示网络提供商的.net，表示非盈利组织的.org等。国际域名及IP地址管理权威机构ICANN认证的域名注册服务商（称为Registrar）可以提供商业机构、网络服务机构、非赢利性组织下的二级域名注册服务，全球通过ICANN认证的Registrar有120多家，其中只有60 家是正式投入运营的Registrar。</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">2.国内域名，又称为国内顶级域名（national top-level domainnames，简称nTLDs），即按照国家的不同分配不同后缀，这些域名即为该国的国内顶级域名。200多个国家和地区都按照ISO3166国家代码分配了顶级域名，例如中国是cn，美国是us，日本是jp等。</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">3.国内注册的域名（也叫国家域名)，按照我们通常的习惯是指中国国内域名，域名以.cn结尾。此类域名由"中国互联网络管理中心"(CNNIC)发放册登记。例如：.gov、.cn、.edu.cn、.com.cn、等。</span> 
+                               </div>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">4.国内域名由中国互联网信息中心统一管理。中国互联网络信息中心（China Internet Network Information Center，简称CNNIC）是经国家主管部门批准，于1997年6月3日组建的管理和服务机构，行使国家互联网络信息中心的职责。</span> 
+                               </p>
+                               <p style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"><br />
+                               </span>
+                               </p>
+                               <p>
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </p>
+                               <hr />
+                               <p style="text-align:left;"><span style="line-height:1.5;font-size:10pt;"><span style="font-size:16px;"><br/><strong>十一.什么是域名？</strong></span></span> 
+                               </p>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:16px;">域名（Domain Name），是由一串用点分隔的名字组成的Internet上某一台计算机或计算机组的名称，用于在数据传输时标识计算机的电子方位（有时也指地理位置，地理上的域名，指代有行政自主权的一个地方区域）。域名是IP地址上的“面具” 。一个域名的价值是便于记忆和沟通的一组服务器的地址（网站，电子邮件，FTP等）。</span> 
+                               </div>
+                               <div style="text-align:left;">
+                                 <span style="line-height:1.5;font-size:10pt;"></span>
+                               </div>
+                               <p style="text-align:left;">
+                                 <br />
+                               </p>
+                                 </div>
+
+
+                      </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="search">
+                      <div class="contant-contant">
+                          <div class="row contant-title">
+                              <h3 class="text-center" style="color:#333">密码找回</h3>
+                          </div>                      
+                          
+                          <div class="contant-contant">
+
+                          <p>密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回密码找回</p>
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="website">
+                      <div class="contant-contant">
+                          <div class="row contant-title">
+                              <h3 class="text-center" style="color:#333">网站收录</h3>
+                          </div> 
+                          <div class="contant-contant">                      
+                             <p>网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录网站收录</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="process">
+                      <div class="contant-contant">
+                          <div class="row contant-title">
+                              <h3 class="text-center" style="color:#333">网站制作流程</h3>
+                          </div> 
+                          <div class="contant-contant">                      
+                             <p>网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程网站制作流程</p>
+                          </div>
+                      </div>                  
+                  </div>
+                  <div class="tab-pane fade" id="feedback">
+                      <div class="row contant-title">
+                              <h3 class="text-center" style="color:#333">在线反馈</h3>
+                      </div> 
+                      <div class="contant-contant">
+                          <p>在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈在线反馈</p>
+                      </div>                   
+                  </div>
+
+               </div>
+
+
+
+
+
+             </div>
+          </div>
+         </div>
+
+       
+       <div class=" container-fluid massage" id="massage">
+          <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                    <h1 class="text-center" aos="zoom-in-up">ONLINE MESSAGE</h1>
+                    <h4 class="text-center"  aos="zoom-in-up">在线联系</h4>
+               </div>   
+            </div>
+            <div class="row">
+                 <div class="col-xs-12">
+                   <form class="form-horizontal">
+                      <div class="form-group radio-style"  aos="zoom-in-up">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control form-horizontal" id="user" name="user" placeholder="尊称*"  autocomplete="off" required="required" >
+                        </div>
+                      </div>
+                      <div class="form-group radio-style"  aos="zoom-in-up"   aos-easing="ease" aos-delay="50" >
+                        <div class="col-sm-12">
+                          <div class="radio radio-inline ">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                               先生
+                            </label>
+                          </div>
+                          <div class="radio radio-inline">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              女士
+                            </label>
+                          </div>
+                        </div>    
+                      </div>                                            
+                      <div class="form-group"  aos="zoom-in-up"   aos-easing="ease" aos-delay="100" >
+                        <div class="col-sm-12">
+                          <input class="form-control" id="tel" pattern="^1[3-9]\d{9}$" placeholder="手机号码*" autocomplete="off" required="required" >
+                        </div>
+                      </div>
+                      <div class="form-group"  aos="zoom-in-up"   aos-easing="ease" aos-delay="200" >
+                        <div class="col-sm-12">
+                          <textarea class="form-control" rows="4"  placeholder="你的要求" autocomplete="off"></textarea>
+                        </div>
+                      </div>                      
+                      <div class="form-group"  aos="zoom-in-up"  aos-easing="ease" aos-delay="300" >
+                        <div class="col-sm-12"  aos="zoom-in-up"  aos-easing="ease" aos-delay="400" >
+                          <button type="submit" class="btn btn-default btn-block text-center">提交</button>
+                        </div>
+                      </div>
+                   </form> 
+                 
+                 </div>
+            
+            </div>
+         </div>
+       </div>
+       
+       
+       <footer>
+         <div class="container">
+            <div class="footer-left pull-left">
+                <ol class="col-xs-12 footer-ol" id="help-list">
+                  <li><a href="help-content.html">域名问题</a></li>
+                  <li><a href="help-content.html">密码找回</a></li>
+                  <li><a href="help-content.html">网站收录</a></li>
+                  <li><a href="help-content.html">网站制作流程</a></li>
+                  <li><a href="help-content.html">在线反馈</a></li>
+
+                </ol>  
+                
+                <ol class="col-xs-12 information">
+                  <li><a href="about-list.html">关于木马</a></li>
+                  <li><a href="about-list-content.html">法律公告</a></li>
+                  <li><a href="about-list-content.html">隐私保护</a></li>
+                  <li><a href="#">粤ICP备15077130号 </a></li>
+                  <li><a href="#">mumanet.com </a></li>
+                </ol> 
+                <p class="footer-address">地址：广州大道北梅岗路一号北方工业广州商务中心202栋402</p> 
+               </div> 
+            <div class="footer-right pull-right">
+                <img  src="images/phone.png" >         
+            </div>        
+          </div> 
+       
+       </footer>
+       <!-- -----------------------------------------------------------------gai-->
+       <div class="toolbar">
+          <!--<a href="###" class="toolbar-item toolbar-item-weixin">-->
+          <!--<span class="toolbar-layer"></span>-->
+          <!--</a>-->
+          <a href="###" class="toolbar-item toolbar-item-feedback"></a>
+          <a href="###" class="toolbar-item toolbar-item-app">
+           <span class="toolbar-layer"></span>
+          </a>
+          <a href="javascript:scroll(0,0)" id="top" class="toolbar-item toolbar-item-top"></a>
+       </div>
+
+    </div>
+       
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--gundong-->
+    <script type="text/javascript" src="dist/aos.js"></script>
+    <script type="text/javascript">
+    	AOS.init({
+	    	easing: 'ease-out-back',
+	    	duration: 1000
+	    });
+    </script>
+
+    <script>
+    	$('.hero__scroll').on('click', function(e) {
+	    	$('html, body').animate({
+	    		scrollTop: $(window).height()
+	    	}, 1200);
+	    });
+    </script>
+
+<!--案例-->
+<!--标签页-->   
+<script>
+   $(function(){
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      // 获取已激活的标签页的名称
+      var activeTab = $(e.target).text(); 
+      // 获取前一个激活的标签页的名称
+      var previousTab = $(e.relatedTarget).text(); 
+      $(".active-tab span").html(activeTab);
+      $(".previous-tab span").html(previousTab);
+   });
+});
+
+
+
+
+
+</script>
+
+  <script>
+          $(function(){
+            var myElement= document.getElementById('carousel-example-generic')
+            var hm=new Hammer(myElement);
+            hm.on("swipeleft",function(){
+                $('#carousel-example-generic').carousel('next')
+            })
+            hm.on("swiperight",function(){
+                $('#carousel-example-generic').carousel('prev')
+            })
+        })
+  </script>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- Demo scripts -->
+		<script src="js/demo.js"></script>
+
+        <script>
+          tel.oninput=function(){
+          tel.setCustomValidity("");
+         };
+        tel.oninvalid=function(){
+          tel.setCustomValidity("请输入正确的手机号码");
+        };
+        </script>
+
+
+
+  </body>
+</html>
+    
+
+    

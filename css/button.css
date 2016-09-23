@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a.animBtn:link, a.animBtn:visited, a.animBtnA:link, a.animBtnA:visited, a.animBtnC:link, a.animBtnC:visited, a.animBtnD:link, a.animBtnD:visited, a.animBtnE:link, a.animBtnE:visited, a.animBtnF:link, a.animBtnF:visited {
+	font-size: 14px;
+	position: relative;
+	display: block;
+	width: 111px;
+	margin: 30px auto 0;
+	padding: 6px 10px;
+	background:none;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+  /*text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);*/
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+     transition: all .3s ease;
+}
+a.animBtnC:link, a.animBtnC:visited {
+	color: #52ad81;
+	border:1px solid #52ad81;
+	margin:30px 20px 50px 0px;
+}
+a.animBtnD:link, a.animBtnD:visited {
+	color: #cd5a48;
+	border:1px solid #cd5a48;
+	margin:30px 20px 50px 0px;
+}
+a.animBtnE:link, a.animBtnE:visited {
+	color: #51a9d6;
+	border:1px solid #51a9d6;
+	margin:30px 20px 50px 0px;
+}
+a.animBtnF:link, a.animBtnF:visited {
+	color: #e69410;
+	border:1px solid #e69410;
+	margin:30px 20px 50px 0px;
+}
+a.animBtn:link, a.animBtn:visited {
+	color: #000;
+	border:1px solid #000;
+}
+a.animBtnA:link, a.animBtnA:visited {
+	color: #fff;
+	border:1px solid #fff;
+}
+a.animBtn:link:after, a.animBtn:visited:after, a.animBtnA:link:after, a.animBtnA:visited:after, a.animBtnC:link:after, a.animBtnC:visited:after, a.animBtnD:link:after, a.animBtnD:visited:after, a.animBtnE:link:after, a.animBtnE:visited:after, a.animBtnF:link:after, a.animBtnF:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	z-index: -1;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+a.animBtn:link:after, a.animBtn:visited:after {
+	background: none repeat scroll 0 0 #000;
+}
+a.animBtnA:link:after, a.animBtnA:visited:after {
+	background: none repeat scroll 0 0 #fff;
+}
+a.animBtnC:link:after, a.animBtnC:visited:after {
+	background: none repeat scroll 0 0 #52ad81;
+}
+a.animBtnD:link:after, a.animBtnD:visited:after {
+	background: none repeat scroll 0 0 #cd5a48;
+}
+a.animBtnE:link:after, a.animBtnE:visited:after {
+	background: none repeat scroll 0 0 #51a9d6;
+}
+a.animBtnF:link:after, a.animBtnF:visited:after {
+	background: none repeat scroll 0 0 #e69410;
+}
+a.animBtnC:link:hover, a.animBtnC:visited:hover {
+	border-color:#52ad81;
+	color: #FFF;
+}
+a.animBtnD:link:hover, a.animBtnD:visited:hover {
+	border-color:#cd5a48;
+	color: #FFF;
+}
+a.animBtnE:link:hover, a.animBtnE:visited:hover {
+	border-color:#51a9d6;
+	color: #FFF;
+}
+a.animBtnF:link:hover, a.animBtnF:visited:hover {
+	border-color:#e69410;
+	color: #FFF;
+}
+
+a.animBtnA:link:hover, a.animBtnA:visited:hover {
+	color: red !important;
+	text-shadow: none;
+}
+ a.animBtn:link:hover:after, a.animBtn:visited:hover:after, a.animBtnA:link:hover:after, a.animBtnA:visited:hover:after, a.animBtnC:link:hover:after, a.animBtnC:visited:hover:after, a.animBtnD:link:hover:after, a.animBtnD:visited:hover:after, a.animBtnE:link:hover:after, a.animBtnE:visited:hover:after a.animBtnF:link:hover:after, a.animBtnF:visited:hover:after {
+ height: 420%;
+}
+a.animBtn.themeD:after, a.animBtnA.themeD:after, a.animBtnC.themeD:after, a.animBtnD.themeD:after, a.animBtnE.themeD:after, a.animBtnF.themeD:after {
+	width: 0%;
+	border-radius: 50%;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animBtn.themeD:hover:after, a.animBtnA.themeD:hover:after, a.animBtnC.themeD:hover:after, a.animBtnD.themeD:hover:after, a.animBtnE.themeD:hover:after, a.animBtnF.themeD:hover:after {
+	height: 450%;
+	width: 110%;
+	opacity: 1;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+a.animBtnB:link, a.animBtnB:visited {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+     transition: all .5s ease;
+}
+a.animBtnB:link:after, a.animBtnB:visited:after {
+	content: "";
+	position: absolute;
+	background: none repeat scroll 0 0 #eee;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	z-index: -1;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+a.animBtnB:link:hover, a.animBtnB:visited:hover {
+	color: #333;
+	text-shadow: none;
+}
+a.animBtnB:link:hover:after, a.animBtnB:visited:hover:after {
+	height: 420%;
+}
+a.animBtnB.themeA:after {
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+a.animBtnB.themeB:after {
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+a.animBtnB.themeC:after {
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animBtnB.themeC:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+a.animBtnB.themeD:after {
+	width: 0%;
+	border-radius: 50%;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animBtnB.themeD:hover:after {
+	height: 450%;
+	width: 110%;
+	opacity: 1;
+}
